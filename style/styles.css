@@ -8,8 +8,8 @@
 }
 
 *{
-    max-width: 1600px;
     margin: 0;
+    padding: 0;
 }
 
 /*Common styles*/
@@ -29,7 +29,9 @@
 .hidden{
     display: none;
 }
-
+p{
+    color: rgb(204, 204, 204);
+}
 .buttons{
     padding: 12px 20px;
     border: none;
@@ -42,6 +44,12 @@
     align-items: center;
 }
 
+
+body{
+    /* max-width: 1600px; */
+    width: 100%;
+    margin: 0 auto;
+}
 /*common gradients*/
 .text-gradient{
     background: linear-gradient(30deg, #F7E93F, #FB09B4, #9100F8);
@@ -88,7 +96,57 @@
 #hamburger-menu:hover{
     transform: scale(1.2);
 }
-
+/*Hero*/
+.hero-section{
+    background-image: url(../assets/hero-bg.png);
+    width: 100%;
+    min-height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.microphone{
+    width: 350px;
+    height: 350px;
+    background-image: url(../assets/hero-circle.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.new-badge{
+    background-color: #00FF88;
+    padding: 8px 16px;
+    /* color: ; */
+    border-radius: 90px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transform: translateY(-325px) translateX(115px);
+}
+.hero-title{
+    font-size: 3.8rem;
+    color: #ffffff;
+}
+.hero-text{
+    margin-top: 10px;
+}
+.group-btn{
+    margin-top: 20px;
+    gap: 10px;
+}
+.listen-on-spotify-btn{
+    font-weight: 500;
+    gap: 10px;
+}
+.subscribe-hero-btn{
+    background: transparent;
+    border: 1px solid #00FF88;
+    color: #00FF88;
+    font-weight: 500;
+    gap: 10px;
+}
 
 
 
@@ -110,5 +168,11 @@
     #hamburger-menu{
         display: inline;
         width: 24px;
+    }
+
+    .microphone{
+        height: 200px;
+        width: 200px;
+        background-size: contain;
     }
 }
