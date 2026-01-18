@@ -80,3 +80,35 @@
     width: 25px;
     margin-left: 5px;
 }
+#hamburger-menu{
+    display: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+#hamburger-menu:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+/*Responsive part*/
+@media screen and (max-width: 576px){
+    .navbar{
+        padding: 16px 20px;
+        flex-wrap: wrap;
+    }
+    .navbar-btn,
+    .menu{
+        display: none;
+    }
+    .logo{
+        font-size: 2rem;
+    }
+    #hamburger-menu{
+        display: inline;
+        width: 24px;
+    }
+}
