@@ -304,4 +304,7 @@ body{
     .why-card-container .why-card:nth-child(4){
         grid-column: span 1;
     }
+    .why-card{
+        padding: 24px;
+    }
 }
