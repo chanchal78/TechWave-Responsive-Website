@@ -10,6 +10,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /*Common styles*/
@@ -46,11 +47,10 @@ p{
 }
 
 
-body{
-    /* max-width: 1600px; */
+/* body{
     width: 100%;
     margin: 0 auto;
-}
+} */
 /*common gradients*/
 .text-gradient{
     background: linear-gradient(30deg, #F7E93F, #FB09B4, #9100F8);
@@ -97,49 +97,74 @@ body{
 #hamburger-menu:hover{
     transform: scale(1.2);
 }
+
+
 /*Hero*/
 .hero-section{
-    background-image: url(../assets/hero-bg.png);
-    width: 100%;
     min-height: 100vh;
-    background-size: contain;
+    background-image: url("../assets/hero-bg.png");
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-content{
+    /* border: 1px solid red; */
     flex-direction: column;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     text-align: center;
+    max-width: 640px;
+    padding: 40px;
 }
 .microphone{
+    background-image: url("../assets/hero-circle.png");
+    position: relative;
     width: 350px;
-    height: 350px;
-    background-image: url(../assets/hero-circle.png);
+    aspect-ratio: 1 / 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+}
+.microphone img{
+    /* width: 150px; */
+    width: 40%;
+    height: auto;
 }
 .new-badge{
-    background-color: #00FF88;
-    padding: 8px 16px;
-    /* color: ; */
-    border-radius: 90px;
+    position: absolute;
+    top: 8%;
+    right: 8%;
+    background: #00FF88;
+    color: black;
     font-size: 1.1rem;
     font-weight: 600;
-    transform: translateY(-325px) translateX(115px);
+    padding: 8px 16px;
+    border-radius: 90px;
 }
 .hero-title{
     font-size: 3.8rem;
     color: #ffffff;
 }
-.hero-text{
-    margin-top: 10px;
+.hero-text p{
+    opacity: 60%;
 }
 .group-btn{
     margin-top: 20px;
     gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 .listen-on-spotify-btn{
     font-weight: 500;
     gap: 10px;
+    border: none;
 }
 .subscribe-hero-btn{
     background: transparent;
@@ -157,7 +182,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 50px 200px 120px 200px;
+    padding: 20px 200px 120px 200px;
     margin: 0 auto;
 }
 .divider{
@@ -177,6 +202,9 @@ body{
     font-size: 3rem;
     margin-top: 50px;
     margin-bottom: 16px;
+}
+.podcast-content{
+    width: 70%;
 }
 .podcast-section-text{
     line-height: 200%;
@@ -200,8 +228,8 @@ body{
 .why-choose{
     flex-direction: column;
     justify-content: center;
-    /* text-align: center; */
     align-items: center;
+    text-align: center;
     padding: 100px 200px;
 }
 .why-choose-title{
@@ -230,6 +258,7 @@ body{
     align-items: flex-start;
     border-radius: 40px;
     padding: 40px;
+    text-align: start;
 }
 .why-card img{
     width: 60px;
@@ -361,6 +390,29 @@ body{
     height: 412px;
     max-height: 100%;
 }
+.footer-section{
+    background-image: url(../assets/footer-bg.png);
+    width: 100%;
+    min-height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+}
+.brand{
+    font-size: 5rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+.platform-info{
+    gap: 40px;
+}
+.platform{
+    display: flex;
+    gap: 8px;
+}
 
 
 
@@ -384,21 +436,46 @@ body{
         width: 24px;
     }
 
-    /* .microphone{
-        height: 200px;
-        width: 200px;
+    
+    /*hero*/
+    .hero-section{
+        min-height: 470px;
+        padding: 0 12px;
         background-size: contain;
-    } */
+        background-position: center 50px;
+        position: relative;
+        background-color: #1A0B2E;
+    }
+    .hero-content{
+        padding: 0 10px;
+        gap: 20px;
+        position: absolute;
+        top: 8%;
+    }
+    .microphone{
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    .hero-title{
+        font-size: 2.5rem;
+    }
+    .group-btn{
+        flex-wrap: wrap;
+    }
+    
 
    
     /*podcast*/
     .podcast-container{
-        padding: 40px 20px;
+        padding: 50px 20px;
     }
     .podcast-cards{
     margin-top: 40px;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
+    }
+    .podcast-content{
+        width: 90%;
     }
     .divider{
     margin-top: 40px;
@@ -476,6 +553,10 @@ body{
     }
     .host-img{
         width: 150px;
-}
+    }
+
+
+    
+
     
 }
