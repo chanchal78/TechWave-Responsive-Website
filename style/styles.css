@@ -285,4 +285,23 @@ body{
     .podcast-cards h2{
         font-size: 2.5rem;
     }
+
+
+    .why-choose{
+        padding: 40px 20px;
+    }
+    .why-choose-title{
+        font-size: 2rem;
+        align-self: center;
+        margin-bottom: 16px;
+    }
+    .why-card-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+    .why-card-container .why-card:nth-child(2),
+    .why-card-container .why-card:nth-child(3),
+    .why-card-container .why-card:nth-child(4){
+        grid-column: span 1;
+    }
 }
