@@ -387,18 +387,12 @@ p{
     background-image: url(../assets/footer-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 412px;
-    max-height: 100%;
-}
-.footer-section{
-    background-image: url(../assets/footer-bg.png);
-    width: 100%;
-    min-height: 50vh;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-height: 45vh;
+    width: 100%;
     gap: 32px;
 }
 .brand{
@@ -417,7 +411,8 @@ p{
 
 
 
-
+/*-----------------------------------------------------*/
+/*-----------------------------------------------------*/
 /*Responsive part*/
 @media screen and (max-width: 576px){
     .navbar{
@@ -461,6 +456,10 @@ p{
     }
     .group-btn{
         flex-wrap: wrap;
+    }
+    .new-badge{
+        top: 2%;
+        right: 2%;
     }
     
 
@@ -556,7 +555,25 @@ p{
     }
 
 
-    
+    .footer-section{
+        background-size: contain;
+        background-position: center;
+        background-color: #210f40;
+        min-height: 30vh;
+        gap: 20px;
+        text-align: center;
+    }
+    .brand{
+        font-size: 2.2rem;
+    }
+    .platform-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
 
     
 }
