@@ -798,3 +798,181 @@ p{
         align-items: center;
     }
 }
+
+
+
+@media screen and (min-width: 768.01px) and (max-width: 1024px){
+    .navbar{
+        padding: 30px 80px;
+        flex-wrap: wrap;
+    }
+    /* .navbar-btn,
+    .menu{
+        display: none;
+    } */
+    .logo{
+        font-size: 2rem;
+    }
+    .navbar-btn .subscribe-btn{
+        padding: 8px 10px;
+    }
+    /* #hamburger-menu{
+        display: inline;
+        width: 24px;
+    } */
+
+    
+    /*hero*/
+    .hero-section{
+        min-height: 470px;
+        padding: 0 12px;
+        background-size: cover;
+        /* background-position: center 50px; */
+        position: relative;
+        background-color: #1A0B2E;
+    }
+    .hero-content{
+        padding: 0 10px;
+        gap: 20px;
+        position: absolute;
+        top: 8%;
+    }
+    .microphone{
+        width: 230px;
+        margin-bottom: 20px;
+    }
+    .hero-title{
+        font-size: 2.8rem;
+    }
+    /* .group-btn{
+        flex-wrap: wrap;
+    } */
+    .new-badge{
+        top: 2%;
+        right: 2%;
+    }
+    
+
+   
+    /*podcast*/
+    .podcast-container{
+        padding: 50px 80px;
+    }
+    .podcast-cards{
+    margin-top: 50px;
+    /* grid-template-columns: repeat(2, 1fr); */
+    gap: 30px;
+    }
+    .podcast-content{
+        width: 90%;
+    }
+    .divider{
+    margin-top: 40px;
+    }
+    .podcast-section-title{
+        font-size: 2.5rem;
+    }
+    .podcast-cards .card{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .podcast-cards h2{
+        font-size: 2.5rem;
+    }
+    .podcast-cards p{
+        font-size: 0.7rem;
+    }
+
+
+    /*why choose*/
+    .why-choose{
+        padding: 50px 40px;
+    }
+    .why-choose-title{
+        font-size: 2.5rem;
+        align-self: center;
+        margin-bottom: 36px;
+    }
+    .why-card-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    .why-card-container .why-card:nth-child(2),
+    .why-card-container .why-card:nth-child(3),
+    .why-card-container .why-card:nth-child(4){
+        grid-column: span 1;
+    }
+    .why-card{
+        padding: 24px;
+    }
+
+
+    /*featured*/
+    .featured-episodes{
+        padding: 60px 40px;
+        gap: 24px;
+    }
+    .featured-title{
+        font-size: 2.5rem;
+    }
+    .featured-card-container{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .featured-card-content h3{
+        font-size: 1.25rem;
+    }
+
+
+    /*host*/
+    .host-section{
+        gap: 24px;
+        padding: 20px 20px;
+    }
+    .host-section-title{
+        font-size: 2.5rem;
+    }
+    .host-card{
+        margin: 0 20px 40px;
+        padding: 34px;
+        gap: 26px;
+    }
+    .host-info{
+        justify-content: center;
+        align-items: left;
+        gap: 16px;
+    }
+    .host-info h3{
+        font-size: 1.8rem;
+    }
+    .host-img{
+        width: 180px;
+    }
+
+
+    /*footer*/
+    .footer-section{
+        background-size: cover;
+        background-position: center;
+        min-height: 40vh;
+    }
+    .footer-content{
+        padding: 20px;
+        gap: 20px;
+        text-align: center;
+    }
+    .brand{
+        font-size: 3rem;
+    }
+    .platform-info{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+}
